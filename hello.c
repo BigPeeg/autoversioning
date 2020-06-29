@@ -2,5 +2,7 @@
 
 int main()
 {
-	printf("Hello, World!\n");
+	const char* BUILD_VERSION = "1.0";
+
+	printf("Hello, World! Version %s\n", BUILD_VERSION);
 }

@@ -7,13 +7,6 @@ all: hello
 hello: hello.c
 	cc -o hello hello.c
 
-# This rule tells make to copy hello to the binaries subdirectory,
-# creating it if necessary
-.PHONY: install
-install:
-	mkdir -p binaries
-	cp -p hello binaries
-
 # This rule tells make to delete hello and hello.o
 .PHONY: clean 
 	clean:
